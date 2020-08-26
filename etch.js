@@ -1,7 +1,7 @@
 const container = document.getElementById('container');
 
 // Define container grid styling
-container.setAttribute("style", "display: grid; grid-template-columns: repeat(16, 20px); grid-template-rows: repeat(16, 20px);\
+container.setAttribute("style", "height: 33%; width: 33%; display: grid; grid-template-columns: repeat(16, 1fr); grid-template-rows: repeat(16, 1fr);\
 margin: 0 33%; border: 2px solid black;");
 
 let numCells = 256;   // The amount of Div items for sketching
@@ -12,7 +12,8 @@ for (let i = 0; i < numCells; i++) {
     // Assign each cell an ID
     cell.id = "grid" + [i];
     // Define CSS elements to apply mouseover properties
-    cell.setAttribute("style", "height: 20px; width: 20px; border-bottom: 1px solid black; border-right: 1px solid black;");
+    cell.setAttribute("style", "height: 20px;\
+    border-bottom: 1px solid black; border-right: 1px solid black;");
     cell.onmouseover = function() {
         cell.style.backgroundColor = "red";
     }
