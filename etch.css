@@ -1,3 +1,49 @@
+body {
+    background-color:rgb(81, 209, 119);
+}
+
 h1 {
     text-align: center;
+}
+
+#container {
+    background-color: white;
+    position: absolute;
+    height: 60%; 
+    width: 40%; 
+    display: grid;   
+    margin: 20px 29%; 
+    border: 2px solid black;
+}
+
+#toolbar {
+    background-color: rgb(233, 67, 61);
+    width: 40%;
+    margin: 10px auto;
+    text-align: center;
+    border: 2px solid black;
+}
+
+button {
+    width: auto;
+    height: 30px;
+    display: inline-block;
+    margin: auto 5px;
+    vertical-align: middle;
+}
+
+input {
+    height: 30px;
+    display: inline-block;
+    margin: 10px 5px;
+    vertical-align: middle;
+}
+
+input[type="checkbox"]{
+    margin: 0;
+}
+
+p {
+    width: auto;
+    margin: 10px auto 0 auto;
 }
